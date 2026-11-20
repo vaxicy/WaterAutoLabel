@@ -1,0 +1,3 @@
+section_label,Water Auto Label
+option_label,Auto-label water quality
+option_tooltip,Water containers display their true quality automatically. Manual labels are kept until the water quality actually changes.

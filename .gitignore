@@ -1,0 +1,14 @@
+# 打包临时目录与探针产物
+**/stage/
+**/build/probe*.dll
+
+# 反编译中间分析产物
+**/tools/out_*.txt
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db

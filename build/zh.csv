@@ -1,0 +1,3 @@
+section_label,水质自动标注
+option_label,自动标注水质
+option_tooltip,水容器自动显示真实水质；玩家手动改的标签会保留，直到水质实际发生变化才自动更新。

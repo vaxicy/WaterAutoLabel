@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ID>WaterAutoLabel</ID>
+  <Name>水质自动标注 / Water Auto Label</Name>
+  <Author>vaxicy</Author>
+  <ModVersion>1.0.0</ModVersion>
+  <Description>所有水容器按真实纯度自动显示对应水质，无需手动贴标签；玩家手动改的标签保留，水质变化时才自动更新。兼容 FraudDetection。使用游戏原生模组加载器，不需要 MelonLoader。</Description>
+  <GameVersions><Version>0.46D</Version></GameVersions>
+  <Assemblies><Assembly>WaterAutoLabel.dll</Assembly></Assemblies>
+  <Capabilities/>
+</Mod>
