@@ -7,9 +7,9 @@ A native C# mod for **Probably Stolen** (Steam App 4348910, the "Deep Space Pawn
 ## Features
 
 - Every liquid container displays its **real water quality** from its actual purity — pure water, high-quality water, base water, ghost water, rust water, gutterflow, and more.
-- **Manual labels are kept.** If you set a label yourself, it stays. Auto-labeling only runs when the water's quality actually changes, so a label you deliberately set is never overwritten out of nowhere.
-- Uses the game's own `WaterFeatureHelper.OnLiquidChanged`, so no custom water-quality math and no save edits.
-- Compatible with **FraudDetection** (truth-in-labeling mod). Both read the same water feature; auto-labeled real quality and FraudDetection's fake-vs-real comparison work side by side.
+- **Manual labels are kept until the water changes.** If the purity stays the same, your label is untouched. When the water is actually purified or contaminated, the displayed label is synced to the true quality.
+- Uses the game's own `WaterFeatureHelper.SetPresumedPurity`, so no custom water-quality math and no save edits.
+- Works alongside **FraudDetection** (truth-in-labeling mod). Note that once the label is synced to the true quality, FraudDetection will no longer show a fake-vs-real difference for that container — that is the expected result of keeping the label honest.
 - Toggle **Auto-label water quality** in the mod settings, on by default.
 
 ## Install

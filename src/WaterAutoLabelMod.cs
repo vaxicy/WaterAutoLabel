@@ -86,7 +86,9 @@ public sealed class WaterAutoLabelTicker : MonoBehaviour
             if (_lastPurity.TryGetValue(item, out prev) && prev == purity) continue;
 
             _lastPurity[item] = purity;
-            WaterFeatureHelper.OnLiquidChanged(item, true);
+            // SetPresumedPurity 同时刷新 fakeCondition（显示标签）、
+            // customIntValue1（记录值）和 publicDisplay，让显示跟上真实水质。
+            WaterFeatureHelper.SetPresumedPurity(item, purity);
             updated++;
         }
 
